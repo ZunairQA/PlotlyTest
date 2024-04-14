@@ -6,7 +6,7 @@ df = pd.read_csv('WLD_RTFP_country_2024-04-08.csv')
 print(df)
 
 app = Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
     html.H1(children='Hi, Graham', style={'textAlign':'center'}),
     html.H4(children='Inflation in seemingly random developing nations', style={'textAlign':'center'}),
